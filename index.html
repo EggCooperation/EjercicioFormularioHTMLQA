@@ -29,7 +29,7 @@
         <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Nombre" maxlength="5" onkeyup="this.value = this.value.toLowerCase();" required>
         <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar el siguiente nombre: Jeronimo David</p>
         <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar numeros</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder sin registrarse completar la edad</p>
+        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
       </div>
       <div class="col-md-6">
         <label for="inputApellido" class="form-label">Apellido</label>
@@ -37,7 +37,7 @@
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un numero, una letra en mayusculas, una en minusculas, y ser de un minimo de 8 caracteres." required>
         <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar el siguiente apellido: Gonzalez Martinez</p>
         <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar numeros</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder sin registrarse completar la edad</p>
+        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
       </div>
       <div class="col-md-6">
         <label for="inputEdad" class="form-label">Edad</label>
@@ -45,7 +45,7 @@
         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
         <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar solo edades mayores a 18 años</p>
         <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar texto</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder sin registrarse completar la edad</p>
+        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
       </div>
       <div class="col-md-6">
         <label for="inputEmail" class="form-label">Email</label>
