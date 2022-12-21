@@ -27,34 +27,25 @@
       <div class="col-md-6">
         <label for="inputNombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Nombre" maxlength="5" onkeyup="this.value = this.value.toLowerCase();" required>
-        <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar el siguiente nombre: Jeronimo David</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar numeros</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
+ 
       </div>
       <div class="col-md-6">
         <label for="inputApellido" class="form-label">Apellido</label>
         <input type="password" class="form-control" placeholder="Ingrese su apellido" aria-label="Apellido" id="pwd" name="pwd"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un numero, una letra en mayusculas, una en minusculas, y ser de un minimo de 8 caracteres." required>
-        <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar el siguiente apellido: Gonzalez Martinez</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar numeros</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
+        
       </div>
       <div class="col-md-6">
         <label for="inputEdad" class="form-label">Edad</label>
         <input type="number" class="form-control" placeholder="Ingrese su edad" aria-label="Edad" 
         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-        <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar solo edades mayores a 18 años</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar texto</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar la edad</p>
+       
       </div>
       <div class="col-md-6">
         <label for="inputEmail" class="form-label">Email</label>
         <input type="text" class="form-control" placeholder="Ingrese un mail de contacto" aria-label="Email" onkeyup="this.value = this.value.toUpperCase();" id="mail" name="mail"
         pattern="^[a-zA-Z0-9]+@GMAIL\.COM$" title="Su mail debe tener el arroba y ser gmail.">
-        <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar su mail usando mayusculas, minusculas, numeros y caracteres especiales</p>
-        <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar cualquier dominio de mail</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder enviar el mail sin el arroba</p>
-        <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin completar el mail</p>
+   
       </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">Seleccione su metodo de pago </label>
@@ -65,14 +56,12 @@
             <option>Criptomonedas</option>
             <option>NFT</option>
           </select>
-          <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder elegir cualquier tipo de metodo de pago </p>
-          <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario no deberia poder elegir más de un tipo de metodo de pago </p>
-          <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder registrarse sin ingresar un metodo de pago </p>
+         
         </div>
         <div class="col-md-6">
           <label for="inputFecha" class="form-label">Fecha vencimiento tarjeta</label>
           <input type="date" class="form-control" placeholder="Ingrese su fecha" aria-label="Fecha" min="1997-01-01" max="2001-12-31" required>
-          <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder elegir cualquier fecha que sea mayor al día actual</p>
+          
         </div>
         <div class="col-md-8">
         <fieldset class="row mb-3">
@@ -86,7 +75,7 @@
               </div>
             </div>
           </fieldset>
-          <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder elegir sí quiere o no suscribrirse</p>
+          
         </div>
         <div class="col-md-6">
           <label for="inputDocumento" class="form-label">¿Quieres dejar algun comentario?
@@ -102,9 +91,7 @@
           <label for="inputEdad" class="form-label">Documento de identidad</label>
           <input id="dni" name="dni" type="text" class="form-control" placeholder="Ingrese su documento" pattern="(?=.*\.)(?=.*[0-9])" title="Su documento debe tener puntos"
           onkeydown="if(event.key==='.'){event.preventDefault();}" required>
-          <p class="mt-2 p-2" style="background-color: #d1e7dd">El usuario deberia poder ingresar un documento de un maximo 8 digitos y un minino de 7</p>
-          <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar texto</p>
-          <p class="mt-2 p-2" style="background-color: #f8d7da">El usuario no deberia poder ingresar numeros negativos</p>
+          
         </div>
     </form>
       </div>
