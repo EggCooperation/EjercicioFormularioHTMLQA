@@ -26,24 +26,24 @@
     <form class="row g-3" method="GET">
       <div class="col-md-6">
         <label for="inputNombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Nombre" maxlength="5" onkeyup="this.value = this.value.toLowerCase();" required>
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Nombre" name="nombre" maxlength="5" onkeyup="this.value = this.value.toLowerCase();" required>
  
       </div>
       <div class="col-md-6">
         <label for="inputApellido" class="form-label">Apellido</label>
-        <input type="password" class="form-control" placeholder="Ingrese su apellido" aria-label="Apellido" id="pwd" name="pwd"
+        <input type="password" class="form-control" placeholder="Ingrese su apellido" aria-label="Apellido" id="pwd" name="apellido"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un numero, una letra en mayusculas, una en minusculas, y ser de un minimo de 8 caracteres." required>
         
       </div>
       <div class="col-md-6">
         <label for="inputEdad" class="form-label">Edad</label>
-        <input type="number" class="form-control" placeholder="Ingrese su edad" aria-label="Edad" 
+        <input type="number" class="form-control" placeholder="Ingrese su edad" aria-label="Edad" name="edad"
         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
        
       </div>
       <div class="col-md-6">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="text" class="form-control" placeholder="Ingrese un mail de contacto" aria-label="Email" onkeyup="this.value = this.value.toUpperCase();" id="mail" name="mail"
+        <input type="text" class="form-control" placeholder="Ingrese un mail de contacto" aria-label="Email" name="email" onkeyup="this.value = this.value.toUpperCase();" id="mail" name="mail"
         pattern="^[a-zA-Z0-9]+@GMAIL\.COM$" title="Su mail debe tener el arroba y ser gmail.">
    
       </div>
